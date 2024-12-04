@@ -1,0 +1,331 @@
+
+* {
+    box-sizing: border-box;
+} 
+/*----Fonts-----*/
+
+body {
+    margin:0;
+    font-family: "Afacad", sans-serif;
+} 
+
+h1 {
+    margin:0;
+    font-size: 50px;
+    font-family:'Gloria Hallelujah', sans-serif;
+}
+h2{
+    font-family: "Afacad", sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;  
+}
+h3{
+    font-family:'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+}
+h4{
+    font-family:'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 700; 
+    text-transform: uppercase;  
+}
+p{
+    font-family:'inter', sans-serif;
+    font-size: 16px;
+}
+
+.nav-link {
+    font-family:'Afacad' sans-serif;
+    font-weight: 50;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 30px 90px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+/* Components */ 
+
+.header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center; 
+    box-shadow: 0 3px 7px;
+    background-color:black;
+    padding: 8px 28px;
+}  
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 39px;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 800;
+}
+.hero {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-position: top;
+    background-size: cover;
+    min-height: 400px;
+}
+.hero-image {
+    max-width: 100%;
+    height:372px;
+    margin-bottom:20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px;
+}
+
+/* layout */ 
+.flex-container, .row {
+    display:flex;
+    justify-content: center;
+    flex: 1 auto;
+    max-width:1112px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; 
+}
+.photo {
+    width: 353px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+.col-lg-12 {
+    flex-basis: 100%;
+    padding: 0 8px;
+} 
+.col-lg-6 {
+    flex-basis: 50%;
+    padding: 0 8px;
+}
+/* components */
+.text-center {
+    text-align: center;
+}
+.align-center {
+    align-items: center;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-center {
+    justify-content: center;
+}
+.wrapper{
+    max-width: 1110px;
+    margin-inline:auto;
+}
+.container-center {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+.footer{
+    background-color: black;
+    color:#ffffff;
+}
+
+. {
+    display: flex; 
+    justify-content: space-between; 
+}
+.flex-end {
+    display: flex; 
+    justify-content: flex-end; /* Aligns items to the right */
+}
+
+.align-center{
+  align-items: center;
+} 
+/* RESPONSIVE */
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.arrow-container {
+    position: absolute;
+    bottom: 20px; /* Adjust this value to control the distance from the bottom */
+    width: 100%;
+    text-align: center;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+background-color: #FFCD68;
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: white;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* fade overlay image text effect*/ 
+
+.anothercontainer {
+    position: relative;
+    width: 50%;
+  }
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #FFCD68;
+  }
+  
+.anothercontainer:hover .overlay {
+    opacity: 1;
+  }
+  
+.text2 {
+    color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .fade-in-overlay {
+        animation: fadeIn 2s forwards;
+    }
+}
+@media (min-width: 769px) {
+    .fade-in-overlay {
+        animation: fadeIn 2s forwards;
+    }
+}
+
+  @media(max-width: 768px){
+    .nav {
+      display:none;
+    } 
+    .h-menu {
+      display:inline-block;
+    } 
+    .col-md-12 {
+      flex-basis:100%;
+    }
+    .px-3 {
+      padding-left: 16px;
+      padding-right: 16px;
+  }
+  .section-image {
+      padding: 48px 16px; 
+  } 
+  .margin-bottom-card { 
+      margin-bottom:32px;
+  }
+
+  * {box-sizing:border-box}

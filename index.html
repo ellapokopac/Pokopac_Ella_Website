@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Joy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Gloria+Hallelujah&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rozha+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+
+<body>
+    <!---header -->
+    <header class="header">
+       <nav class="nav col-lg-12">
+            <a href="#" class="nav-link">WHAT DO WE DO?</a>
+            <a href="#" class="nav-link">SIGN UP</a>
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">GALLERY</a>
+            <a href="#" class="nav-link">CONTACT</a>
+        </nav>
+    </header>
+          
+    <section class="hero wrapper">
+        <div class="container-center">
+            <div>
+                <img src="images/Creating Joy Header Image.png" width="862" height="372"alt="creating joy logo" class="center-image">
+            </div> 
+            <div>
+                <a href="https://form.jotform.com/243356375227056" class="btn content">Sign Up Now!</a>
+            </div>
+            <script type="text/javascript" src="https://form.jotform.com/243356375227056"></script>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <div class="container"> 
+            <img src="images/studio.png" width="353" height="285" alt="the studio">
+            <div>
+                <h1>what do we do?</h1>
+                <p>Creating Joy is an instruction based art studio where children get to "shine" and enrich their imaginations! It is designed as an avenue for children to express themselves, develop skills, and share their artwork within the community.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wrapper">
+        <div class="container">
+            <h1>meet the instructors!</h1>
+            <div class="container">
+                <div>
+                    <img src="images/mrs.katie.JPG" width="215.22" height="234.12" alt="mrs.katie" class="photo">
+                    <h2>MRS. KATIE</h2>
+                </div>
+                <div>
+                    <p>Katie grew up always loving art and wanting to teach. She has been a pre-school teacher and teaching art classes since 1995. This combination has given her the ability to work with kids, especially their fine motor skills and making the complex simple. Katie and Brent met in high school, sharing many art classes together.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <img src="images/mr.brent.JPG" width="215.22" height="234.12" alt="mr.brent" class="photo">
+                    <h2>MR.BRENT</h2>
+                </div>
+                    <div>
+                        <p>Brent grew up always wanting to be a designer. He has designed logos, websites and advertisements for several small businesses including his own and Creating Joy. Brent has worked with kids as a private art teacher, substitute and coach for 30 years. Katie and Brent have two kids, Josiah, who graduated college as a sport business major. Ella, currently in college, working on her Graphic Design major. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-center">
+        <h1>check out our artist and their work!</h1>
+
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/artist 1.png" style="width:100%" width="267" height="459">
+      <div class="text">Artist 1 with her lighthouse drawing!</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/artist 2.png" style="width:100%" width="267" height="459">
+      <div class="text">Artist 2 with his dragon drawing!</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/artist 3.png" style="width:100%" width="267" height="459">
+      <div class="text">Artist 3 with his koala drawing!</div>
+    </div>
+    <!-- Next and previous buttons -->
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
+  <!---javascript for slideshow-->
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+    </section>
+
+    <section class="container-center align-items">
+        <h1>our locations!</h1>
+        <p>Interested in signing up?? YAY!! Our classes are split up in different age groups and locations! First select the location that best works for you, then find your child’s age group and select the class that works best for you!</p>
+        <div>
+            <div class="anothercontainer">
+                <img src="images/morrow art center.png" width="267" height="305" alt="morrow art center" class="image">
+                <div class="overlay">
+                  <div class= "text2">OUR STUDIO AT THE MORROW ART CENTER</div>
+                </div>
+            </div>
+            <div class="anothercontainer">
+                <img src="images/miami township.png" width="267" height="305" alt="morrow art center" class="image">
+                <div class="overlay">
+                  <div class= "text2">MIAMI TOWNSHIP</div>
+                </div>
+            </div>
+            <div class="anothercontainer">
+                <img src="images/liberty bible academy.png" width="267" height="305" alt="morrow art center" class="image">
+                <div class="overlay">
+                  <div class= "text2">LIBERTY BIBLE ACADEMY</div>
+                </div>
+            </div>
+        </div>
+        <p>Looking to book us for a birthday party or special event?</p>
+        <p>Would you like us to offer classes at your location? </p>
+        <p>Need a studio to rent out for a party or event? </p>
+            
+        <p>Please email us at Creatingjoystudio@gmail.com for more information, we look forward to hearing from you! </p> 
+    </section>
+
+    <footer class="footer space-between">
+            <div>
+                <h4>contact us</h4>
+                <div>
+                    <img src="images/instagram.png" width="40" height="40" alt="instagram logo">
+                    <p>@Creatingjoystudio</p>
+                </div>
+                <div>
+                    <img src="images/facebook.png" width="40" height="40" alt="facebook logo">
+                    <p>@Creating JOY</p>
+                </div>
+                    <img src="images/gmail.png" width="40" height="40" alt="gmail logo">
+                    <p>Creatingjoystudio@gmail.com</p>
+                </div>
+            <div>
+                <h4>address</h4>
+                <p>Studio 25</p> 
+                <p>10 Miranda St.</p>
+                <p>Morrow, OH 45152</p>   
+            </div>
+    </footer> 
+    </div>  
+</body> 
+</html>
+
+
